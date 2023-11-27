@@ -1,0 +1,9 @@
+{% extends 'app.twig' %}
+
+{% block content %}
+    <h1>{{ trans('headers.welcome') }}</h1>
+
+    {{ trans_choice('forum.messages_count', 0, { name: 'Alex' }) }}
+
+    {{ trans_choice('forum.post_count', 0) }}
+{% endblock %}
